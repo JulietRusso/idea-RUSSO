@@ -1,0 +1,387 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+.header__logo{
+    width: 6rem;
+    height: 6rem;
+}
+
+#nav > li{
+    justify-content: space-between;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    list-style: none;
+    display: inline-block;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+    position: relative;
+   
+}
+
+#nav a{
+    list-style: none;
+    text-decoration-line: none;
+    color: white;
+    
+}
+
+#nav a:hover{
+    color: #9C6644;
+    transition: all .3s;
+}
+#submenu{
+    position: absolute;
+    padding: 15px;
+    background-color: #b088688c;
+    list-style: none;
+    display: block;
+}
+#submenu li a{
+    display: none;
+    padding: 15px;
+    
+}
+#nav li:hover .submenu{
+    display: block;
+
+}
+
+/*header index*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/dEOgWB.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+   
+}
+
+
+/* main index*/
+.card__image{
+    width: 260px;
+    height: 50vh;
+}
+
+.card__container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card__title{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #301C0E;
+
+}
+.subtitle{
+    font-size: 3rem;
+    justify-content: center;
+    margin: 4rem;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    border-bottom: solid 10px #9C6644;
+    
+}
+.box{
+    display: flex;
+    padding: 7rem;
+    align-items: center;
+
+}
+ 
+.grid_index{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    
+}
+.grid_image{
+    
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+
+.title_form{
+    font-size: 3rem;
+    justify-content: center;
+    margin: 4rem;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    border-bottom: solid 10px #B08968;
+
+}
+
+.image_form{
+    width: 1345px;
+    height: 50vh;
+    text-align: center;
+}
+
+
+
+/*NOSOTROS*/
+
+.header__2{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.box_info{
+    display: flex;
+    flex: 1 1 50%;
+    padding: 2rem;
+    align-items: center;
+    
+}
+
+.box_text{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+}
+.box_title1{
+    color: #B08968;
+    font-size: 2.5rem;
+    display: flex;
+    
+
+}
+.box_text1{
+    font-size: 2rem;
+    color: white;
+}
+.image_nosotros1{
+    margin: 5rem;;
+    height: 49rem;
+    width: 40rem;
+    flex: 1 1 50%;
+    
+
+}
+.subtitle_nosotros{
+    color: #B08968;
+}
+.image-pages{
+    background-image: url(../img/image_nosotros.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 30vh;
+    
+}
+
+.title-pages{
+    text-align: center;
+    color:white;
+    padding: 9rem;
+    font-size: 4rem;
+}
+/*RECITALES*/
+.title-pages{
+    padding: 70px;
+    
+}
+.box_recital{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 5rem;
+    
+}
+.grid_recital{
+    position: relative;
+}
+.gallery_recital{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+}
+.grid_recital:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+.grid_recital:nth-child(2){
+    grid-column-start: 7;
+    grid-column-end: 13;
+}
+.grid_recital:nth-child(3){
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.grid_recital:nth-child(4){
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.grid_recital:nth-child(5){
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.grid_recital:nth-child(6){
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.grid_recital:nth-child(7){
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.grid_recital:nth-child(8){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.grid_recital:nth-child(9){
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.submenu{
+    display: block;
+    padding: 15px 20px;
+}
+/*CONTACTO*/
+.image-contact{
+    background-image: url(../img/contact.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 30vh;
+}
+.form_title{
+    font-size: 2rem;
+    color: #9C6644;
+}
+.form__contact{
+    padding: 50px;
+    margin: 50px;
+    background-color: #301C0E;
+    text-align: center;
+    background-position: center center;
+}
+
+
+/*footer*/
+
+#footer{
+    background-color: #9C6644;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 30px;
+    height: 30px;
+}
+.footer__title{
+    color: white;
+}
+    
+/*Responsive*/
+
+@media screen and (max-width: 480px){
+    .header{
+        display: block;
+
+    }
+    .header__2{
+        display: block;
+    }
+    #nav li{
+        background-color: #9C6644;
+        display: inline-flex;
+        justify-content: center;
+        margin: 22px;
+        
+    }
+    #submenu{
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        list-style: none;
+       
+    }
+    .picture_logo{
+        display: flex;
+        justify-content: center;
+    }
+    .card__container{
+        display: grid;
+    }
+    .subtitle{
+        font-size: 1.5rem;
+    }
+
+    .image_form{
+        height: 15vh;
+        width: 480px;
+    }
+    
+    .box_info{
+        display: grid;
+    }
+    .image_nosotros1{
+        margin: 0%;
+    }
+    .box_text1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .box_title1{
+        justify-content: center;
+        font-size: 2rem;
+    }
+    .box{
+        display: grid;
+    }
+
+}
+@media screen and (max-width: 500px){
+    .box_recital{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+    
+    
+
+
