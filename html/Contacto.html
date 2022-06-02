@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/index.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Koulen&family=Playfair+Display:wght@500&family=Roboto+Slab:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -11,51 +12,66 @@
 </head>
 <body>
     <header class="header__2">
-        <picture class="picture_logo">
-            <img src="../img/Sin título-1.png" alt="Camara de fotografia" class="header__logo">
-       </picture>
-       <nav>
-           <ul id="nav">
-               <li><a href="../index.html" class="nav__link">INICIO</a></li> 
-               <li><a href="./Nosotros.html" class="nav__link">NOSOTROS</a></li>
-               <li><a href="../idea RUSSO/html/Galeria.html" class="nav__link">GALERIA</a>
-                   <ul id="submenu">
-                      <li><a href="./index.html" class="submenu">CEREMONIAS</a></li>
-                      <li><a href="./index.html" class="submenu">BOOKS</a></li>
-                      <li><a href="./index.html" class="submenu">RECITALES</a></li>
-                      <li><a href="./index.html" class="submenu">FOTOPRODUCTO</a></li> 
-                   </ul> 
-               </li>
-               <li><a href="../html/Contacto.html" class="nav__link">CONTACTO</a></li>
-           </ul>
-       </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <img src="../img/Sin título-1.png" alt="" class="col-lg-2 navbar-brand ">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="../index.html">INICIO</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="../html/Nosotros.html">NOSOTROS</a>
+                  </li>
+                   <img src="../img/Sin título-1.png" alt="" class="navbar-brand" id="logo" >
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">GALERIA</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../html/Ceremonias.html">CEREMONIAS</a></li>
+                      <li><a class="dropdown-item" href="../html/Books.html">BOOKS</a></li>
+                      <li><a class="dropdown-item" href="../html/Recitales.html">RECITALES</a></li>
+                      <li><a class="dropdown-item" href="../html/Fotoproducto.html">FOTOPRODUCTO</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="../html/Contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
     </header>
     <section class="image-contact">
         <h2 class="title-pages">CONTACTO</h2>
     </section>
-    <section class="subtitle_contact" data-aos="fade-right" >
+    <section class="subtitle" data-aos="fade-right" >
         <h1>¿QUERÉS CONTRATAR NUESTRO SERVICIO?</h1>
         
     </section>
   <form class="form__contact" action="./index.js" method="get">
-      <section>
-          <h2 class="form_title">Comunicate con nosotros</h2>
-      </section>
-    
-     <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-     <br></br>
-     <input type="email" name="email" id="email" placeholder="Email">
-     <br></br>
-     <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="ingrese aqui su consulta"></textarea>
-     <br></br>
-      <select name="" id="">
-          <option value="hombre">hombre</option>
-          <option value="mujer">mujer</option>
-      </select>
-     <br></br>
-     <input type="submit" name="enviar" id="enviar">
-     <input type="reset" name="borrar">
-
+      <div class="form">
+          <section>
+             <h2 class="form_title">Comunicate con nosotros</h2>
+          </section>
+           <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control">
+           <br></br>
+            <input type="email" name="email" id="email" placeholder="Email" class="form-control">
+            <br></br>
+            <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="ingrese aqui su consulta" class="form-control"></textarea>
+            <br></br>
+            <input type="submit" name="enviar" id="enviar" class="btn btn-dark btn btn-secondary btn-lg" >
+            <input type="reset" name="borrar" class="btn btn-dark btn btn-secondary btn-lg">  
+      </div>
+      <div class="form_maps">
+          <section>
+             <h2 class="form_title">Donde encontrarnos</h2>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.243878368938!2d-58.260825499999996!3d-34.7242466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e6bac9ba17b%3A0x702ea30c054ba56!2sQuilmes!5e0!3m2!1ses-419!2sar!4v1654031489341!5m2!1ses-419!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </section>
+      </div>
     </form>
   <footer id="footer">
       <span class="logo">
@@ -72,6 +88,7 @@
         <script>
             AOS.init();
         </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   
 </body>
 </html>
