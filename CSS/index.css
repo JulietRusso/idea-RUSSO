@@ -12,7 +12,8 @@ body{
 }
 .index{
     background-image: url(../img/dEOgWB.jpg);
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
 }
@@ -39,10 +40,11 @@ body{
     list-style: none;
     text-decoration-line: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 3rem;
     margin-top: 3rem;
     padding: 2px;
+    text-transform: uppercase;
 
 }
 
@@ -55,6 +57,7 @@ body{
     padding: 15px;
     background-color: #9C6644;
     list-style: none;
+    text-transform: capitalize;
     font-size: 1.2rem;
 }
 .dropdown-item{
@@ -74,8 +77,8 @@ body{
 
 /* main index*/
 .card__image{
-    width: 260px;
-    height: 50vh;
+    width:  260px;
+    height: 90%;
 }
 
 .card__container{
@@ -87,11 +90,12 @@ body{
 }
 
 .card__title{
+    text-transform: capitalize;
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #301C0E;
+    background-color: black;
 
 }
 .animation:hover{
@@ -100,46 +104,51 @@ body{
 
 }
 .subtitle{
-    font-size: 3rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
     justify-content: center;
     margin: 4rem;
     padding: 1rem;
     text-align: center;
     color: white;
-    border-bottom: solid 5px #9C6644;
+    border-bottom: solid 3px #9C6644;
 }
 
-.box{
-    display: flex;
-    padding: 7rem;
-    align-items: center;
-
-}
 
 .row{
-    margin: 2rem;
-    padding: 2rem;
+    justify-content: center;
+    padding: 10rem;
     row-gap: 2rem;
 }
-
-
 .title_form{
-    font-size: 3rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
     justify-content: center;
     margin: 4rem;
     padding: 1rem;
     text-align: center;
     color: white;
-    border-bottom: solid 10px #B08968;
-
+    border-bottom: solid 3px #B08968;
+}
+.section-image{
+    object-fit: cover;
+    
+    
 }
 
-.image_form{
-    width: 1345px;
-    height: 50vh;
-    text-align: center;
+.card-body{
+    background-image: url(../img/indedx.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40vh;
+    
 }
-
+.btn{
+    margin-top: 110px;
+    font-size: 2rem;
+    
+}
 
 
 /*NOSOTROS*/
@@ -162,10 +171,9 @@ body{
     color: #B08968;
     font-size: 2.5rem;
     display: flex;
-    
-
+    text-transform: capitalize;
 }
-.box_text1{
+.box_text1{  
     font-size: 2rem;
     color: white;
 }
@@ -192,9 +200,10 @@ body{
     text-align: center;
     color:white;
     padding: 9rem;
-    font-size: 4rem;
+    text-transform: uppercase;
+    font-size: 3.5rem;
 }
-/*RECITALES*/
+/*PAGES*/
 .title-pages{
     padding: 70px;
     
@@ -208,16 +217,13 @@ body{
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 2rem;
+    margin: 50px;
     padding: 7rem;
 }
 .grid_recital{
     position:relative;
 }
-.gallery_recital1{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
+
 .gallery_recital1:hover{
     transform: scale(1.1);
     transition: 1s;
@@ -284,9 +290,10 @@ body{
     padding: 15px 20px;
 }
 .title-pages-galery{
-    font-size: 3rem;
+    text-transform: uppercase;
+    font-size: 3.5rem;
     color: white;
-    border-bottom: solid 2px white;
+    border-bottom: solid 3px  #B08968;
     text-align: center;
 }
 
@@ -306,10 +313,11 @@ body{
     padding: 1rem;
     text-align: center;
     color: white;
-    border-bottom: solid 10px #9C6644;
+    border-bottom: solid 3px #9C6644;
 }
 .form_title{
-    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-size: 2rem;
     color: #B08968;
 }
 .form__contact{
@@ -331,17 +339,44 @@ body{
 
 #footer{
     background-color: #9C6644;
-}
-.logo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    width: 30px;
-    height: 30px;
-}
-.footer__title{
+    width: 100vh;
+    position: absolute;
+    padding-top:40px; 
     color: white;
 }
+.footer-content{
+    background-color: #9C6644;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer-content h3{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.footer-copy{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.logo{
+    margin: 0.5rem;
+    height: 30px;
+    width: 30px;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+
+
+
+
     
 /*Responsive*/
 
@@ -361,11 +396,7 @@ body{
         list-style: none;
        
     }
-    .card__container{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
+    
     .subtitle{
         font-size: 1.5rem;
     }
@@ -392,30 +423,34 @@ body{
     .box{
         display: grid;
     }
-
-}
-@media screen and (max-width: 500px){
     .box_recital{
         display: flex;
         flex-direction: column;
 
     }
-
 }
 @media screen and (max-width: 600px){
+    .form__contact{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
     .form{
-        display: grid;
-        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 2rem;
     }
     .form_maps{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-row: 1fr;
+        width: 100%;
+        padding: 5rem;
     }
-    
-
+   
+    .card__container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
-    
+ 
 @media screen and (max-width: 990px){
     .col-lg-2{
         display: grid;
@@ -430,6 +465,11 @@ body{
         padding: 2px;
         background-color: black;
     }
+    .card__image{
+        width:  190px;
+        height: 90%;
+    }
+    
 
 }
     
