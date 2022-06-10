@@ -70,12 +70,12 @@ body{
 
 }
 
-/*header index*/
+header index
 .navbar-toggler{
     background-color: #9C6644;
 }
 
-/* main index*/
+/* main index
 .card__image{
     width:  260px;
     height: 90%;
@@ -152,9 +152,18 @@ body{
 
 
 /*NOSOTROS*/
+.subtitle{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    justify-content: center;
+    margin: 4rem;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    border-bottom: solid 3px #9C6644;
+}
 
-
-.box_info{
+.box{
     display: flex;
     flex: 1 1 50%;
     padding: 2rem;
@@ -185,9 +194,7 @@ body{
     
 
 }
-.subtitle_nosotros{
-    color: #B08968;
-}
+
 .image-pages{
     background-image: url(../img/image_nosotros.jpg);
     background-size: cover;
@@ -444,13 +451,9 @@ body{
         padding: 5rem;
     }
    
-    .card__container{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
+   
 }
- 
+ /*
 @media screen and (max-width: 990px){
     .col-lg-2{
         display: grid;

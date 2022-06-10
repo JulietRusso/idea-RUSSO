@@ -1,0 +1,37 @@
+footer{
+    #footer{
+        background-color: #9C6644;
+        width: 100vh;
+        position: absolute;
+        padding-top:40px; 
+        color: white;
+    }
+    .footer-content{
+        background-color: #9C6644;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h3{
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        margin-top: 1rem;}   
+    }
+    .footer-copy{
+        font-size: 1.2rem;
+        text-transform: capitalize;
+    }
+    .logo{
+        margin: 0.5rem;
+        height: 30px;
+        width: 30px;
+    }
+    .socials{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+}
