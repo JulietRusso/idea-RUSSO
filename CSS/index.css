@@ -1,13 +1,32 @@
+:root{
+    /*colors*/
+    --primary: #9C6644;
+    --secondary: #B08968; 
+    --text-color: white; 
+    --base: black;
+
+    /*font-sizes*/
+    --text-large: 2.5rem; 
+    --text-medium: 2rem; 
+    --text-base: 1.5rem; 
+    --text-small: 1.3rem;
+
+    /*font-family*/
+    --Principal:'Roboto', sans-serif; 
+
+}
+
 *{
     margin: 0px;
     padding: 0px;
 }
 html{
     font-size: 62.5%;
+    
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--Principal);
     background-color: black;
 }
 .index{

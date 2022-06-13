@@ -16,20 +16,20 @@
     display: none;
 }
 .active{
-    color: #9C6644;
+    color: var(--primary);
 }
 
 .nav-link{
     list-style: none;
     text-decoration-line: none;
     color: white;
-    font-size: 1.3rem;
+    font-size: var(--text-small);
     margin: 3rem;
     margin-top: 3rem;
     padding: 2px;
     text-transform: uppercase;
     &:hover{
-        color: #9C6644;
+        color: var(--primary);
         transition: all .3s;
     }
 
@@ -37,10 +37,10 @@
 .dropdown-menu{
     
     padding: 15px;
-    background-color: #9C6644;
+    background-color: var(--primary);
     list-style: none;
     text-transform: capitalize;
-    font-size: 1.2rem;
+    font-size:var(--text-small);
     .dropdown-item{
         display: block;
         padding: 15px;
@@ -53,5 +53,5 @@
 }
 
 .navbar-toggler{
-    background-color: #9C6644;
+    background-color: var(--primary);
 }

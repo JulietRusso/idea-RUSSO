@@ -3,7 +3,7 @@
     flex-direction: row;
     gap: 1rem;
     justify-content: center;
-    background-color: black;
+    background-color: var(--base);
 
     &__image{
         width:  260px;
@@ -11,11 +11,11 @@
     }
     &__title{
         text-transform: capitalize;
-        color: white;
+        color: var(--text-color);
         display: flex;
         flex-direction: row;
         justify-content: center;
-        background-color: black;
+        background-color:var(--base);
     
     }
     .animation:hover{
@@ -27,12 +27,12 @@
 }
 .subtitle_index{
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: var(--text-large);
     justify-content: center;
     margin: 4rem;
     padding: 1rem;
     text-align: center;
-    color: white;
+    color: var(--text-color);
     border-bottom: solid 3px #9C6644;
 }
 
@@ -44,7 +44,7 @@
 }
 .title_form{
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: var(--text-large);
     justify-content: center;
     margin: 4rem;
     padding: 1rem;
@@ -67,7 +67,7 @@
 
     .btn{
         margin-top: 110px;
-        font-size: 2rem;
+        font-size: var(--text-medium);
         
     }
     

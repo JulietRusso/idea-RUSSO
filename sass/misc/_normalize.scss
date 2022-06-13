@@ -7,6 +7,6 @@ html{
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
-    background-color: black;
+    font-family: var(--principal);
+    background-color: var(--base);
 }
