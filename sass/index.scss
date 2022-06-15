@@ -1,12 +1,13 @@
-@import "./views/inicio.scss";
+@import "./views/inicio";
 
 @import "./partials/header";
-@import "./partials/footer.scss";
+@import "./partials/footer";
 
+@import "./misc/variants";
 @import "./misc/normalize";
 @import "./misc/mediaqueries";
 @import "./misc/animation";
-@import "./misc/variants";
+
 
 
 

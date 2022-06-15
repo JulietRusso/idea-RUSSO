@@ -1,17 +1,15 @@
-:root{
-    /*colors*/
-    --primary: #9C6644;
-    --secondary: #B08968; 
-    --text-color: white; 
-    --base: black;
+/*colors*/
+$colors: (
+    primary: #9C6644,
+    secondary: #B08968,
+    text-color: white, 
+    base: black
+);
 
-    /*font-sizes*/
-    --text-large: 2.5rem; 
-    --text-medium: 2rem; 
-    --text-base: 1.5rem; 
-    --text-small: 1.3rem;
+/*font-sizes*/
 
-    /*font-family*/
-    --Principal:'Roboto', sans-serif; 
+$text-large: 2.5rem;
+$text-medium: 2rem; 
+$text-base: 1.5rem; 
+$text-small: 1.3rem;
 
-}
