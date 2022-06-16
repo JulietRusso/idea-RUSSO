@@ -1,12 +1,15 @@
+@import "../misc/variants";
+@import "../misc/mixins";
+
 *{
-    margin: 0px;
-    padding: 0px;
+    @include container(0px, 0px);
+
 }
 html{
     font-size: 62.5%;
 }
 
 body{
-    font-family: var(--principal);
-    background-color: var(--base);
+    font-family: $principal;
+    background-color: black;
 }

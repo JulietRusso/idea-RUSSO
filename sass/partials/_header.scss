@@ -1,14 +1,15 @@
+@import "../misc/variants";
+@import "../misc/mixins";
+
 .index{
+    @include sizes(100%, 100vh);
     background-image: url(../img/dEOgWB.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
 }
 .navbar-brand{
-    width: 8rem;
-    height: 8.5rem;
-    
+    @include sizes(8rem, 8.5rem);
+
 
     animation: rotate ease 3s infinite;
 }
@@ -16,34 +17,32 @@
     display: none;
 }
 .active{
-    color: var(--primary);
+    color: map-get($map: $colors, $key:'primary');
 }
 
 .nav-link{
+    @include container(3rem, 2px);
     list-style: none;
     text-decoration-line: none;
-    color: white;
-    font-size: var(--text-small);
-    margin: 3rem;
+    color: map-get($map: $colors, $key:'text-color');
+    font-size: $text-small;
     margin-top: 3rem;
-    padding: 2px;
     text-transform: uppercase;
     &:hover{
-        color: var(--primary);
+        color: map-get($map: $colors, $key:'primary');
         transition: all .3s;
     }
 
 }
 .dropdown-menu{
-    
-    padding: 15px;
-    background-color: var(--primary);
+    @include container(0, 15px);
+    background-color: map-get($map: $colors, $key:'primary') ;
     list-style: none;
     text-transform: capitalize;
-    font-size:var(--text-small);
+    font-size:$text-small;
     .dropdown-item{
+        @include container(0, 15px);
         display: block;
-        padding: 15px;
         &:hover .dropdown-item{
             display: block;
         
@@ -53,5 +52,5 @@
 }
 
 .navbar-toggler{
-    background-color: var(--primary);
+    background-color: map-get($map: $colors, $key:'primary');
 }

@@ -1,37 +1,36 @@
+@import "../misc/variants";
+@import "../misc/mixins";
+
 footer{
     #footer{
-        background-color: var(--primary);
-        width: 100vh;
+        background-color: map-get($map: $colors, $key:'primary');
+        @include sizes(100vh, 0);
         position: absolute;
         padding-top:40px; 
-        color: white;
+        color: map-get($map: $colors, $key:'text-color');
     }
     .footer-content{
-        background-color: var(--primary);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        background-color: map-get($map: $colors, $key:'primary');
+        @include flex(column, center, 0);
         align-items: center;
         text-align: center;
 
         h3{
         text-transform: uppercase;
-        font-size: var(--text-base);
+        font-size: $text-base;
         margin-top: 1rem;}   
     }
     .footer-copy{
-        font-size: var(--text-small);
+        font-size: $text-small;
         text-transform: capitalize;
     }
     .logo{
-        margin: 0.5rem;
-        height: 30px;
-        width: 30px;
+        @include container(0.5rem, 0);
+        @include sizes(30px, 30px);
     }
     .socials{
-        display: flex;
+        @include flex(0, center, 0);
         align-items: center;
-        justify-content: center;
-        margin: 1rem;
+        @include container(1rem, 0);
     }
 }
