@@ -8,7 +8,14 @@
   font-size: 2.5rem;
   justify-content: center;
   text-align: center;
-  color: #9C6644; }
+  color: #B08968; }
+
+.text {
+  margin: 0px;
+  padding: 0px;
+  font-size: 2rem;
+  text-align: center;
+  color: white; }
 
 .card {
   display: flex;
@@ -19,16 +26,13 @@
   .card__image {
     width: 260px;
     height: 90%; }
-  .card__title, .card__title-active {
+  .card__title {
     text-transform: capitalize;
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 0px;
-    background-color: black; }
-    .card__title-active {
-      color: #9C6644; }
+    gap: 0px; }
   .card .animation:hover {
     transform: scale(1.2);
     transition: 1s; }
@@ -70,6 +74,178 @@
   .card-body .btn {
     margin-top: 110px;
     font-size: 2rem; }
+
+/*colors*/
+/*font-sizes*/
+/*font-family*/
+.subtitle {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  justify-content: center;
+  margin: 4rem;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  border-bottom: solid 3px #9C6644; }
+
+.box {
+  display: flex;
+  flex: 1 1 50%;
+  margin: 0;
+  padding: 2rem;
+  align-items: center; }
+  .box_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: 0;
+    gap: 0;
+    flex: 1 1 50%; }
+  .box_title1 {
+    color: #B08968;
+    font-size: 2.5rem;
+    display: flex;
+    text-transform: capitalize; }
+  .box_text1 {
+    font-size: 2rem;
+    color: white; }
+
+.image_nosotros1 {
+  margin: 5rem;
+  padding: 0;
+  width: 40rem;
+  height: 49rem;
+  flex: 1 1 50%; }
+
+.image-pages {
+  background-image: url(../img/image_nosotros.jpg);
+  background-size: cover;
+  background-position: center center; }
+
+.title-pages {
+  margin: 0;
+  padding: 9rem;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3.5rem; }
+
+/*colors*/
+/*font-sizes*/
+/*font-family*/
+.image-contact {
+  background-image: url(../img/contact.jpg);
+  background-size: cover;
+  background-position: center center; }
+
+.subtitle_contact {
+  font-size: 2rem;
+  color: white;
+  justify-content: center;
+  margin: 4rem;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: solid 3px #9C6644; }
+
+.form__contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: 0;
+  gap: 0;
+  text-align: center;
+  height: 70vh; }
+
+.form {
+  width: 50%;
+  height: 0;
+  margin: 0;
+  padding: 5rem; }
+  .form_title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #B08968; }
+  .form_maps {
+    width: 50%;
+    height: 0;
+    margin: 0;
+    padding: 5rem; }
+
+/*colors*/
+/*font-sizes*/
+/*font-family*/
+.title-pages {
+  margin: 0;
+  padding: 70px; }
+
+.box_recital {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 50px;
+  padding: 7rem; }
+
+.gallery_recital {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+  .gallery_recital:hover {
+    transform: scale(1.1);
+    transition: 1s; }
+
+.grid_recital {
+  position: relative; }
+  .grid_recital:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 7; }
+  .grid_recital:nth-child(2) {
+    grid-column-start: 7;
+    grid-column-end: 13; }
+  .grid_recital:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3; }
+  .grid_recital:nth-child(4) {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3; }
+  .grid_recital:nth-child(5) {
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 3; }
+  .grid_recital:nth-child(6) {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4; }
+  .grid_recital:nth-child(7) {
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 4; }
+  .grid_recital:nth-child(8) {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5; }
+  .grid_recital:nth-child(9) {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 5; }
+
+.submenu {
+  display: block;
+  padding: 15px 20px; }
+
+.title-pages-galery {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: white;
+  border-bottom: solid 3px  #B08968;
+  text-align: center; }
 
 /*colors*/
 /*font-sizes*/
@@ -186,6 +362,12 @@ body {
 /*font-sizes*/
 /*font-family*/
 @media screen and (max-width: 990px) {
+  .index {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../img/dEOgWB.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat; }
   .col-lg-2 {
     display: grid; }
   #logo {
@@ -198,7 +380,14 @@ body {
     background-color: black; }
   .card__image {
     width: 190px;
-    height: 90%; } }
+    height: 90%; }
+  .form {
+    margin: 5px;
+    padding: 0; }
+    .form_maps {
+      margin: 5px;
+      padding: 0;
+      height: 70vh; } }
 
 @media screen and (max-width: 600px) {
   .card {
@@ -206,15 +395,71 @@ body {
     flex-direction: column;
     justify-content: 0;
     gap: 0;
-    text-align: center; } }
+    text-align: center; }
+  .form__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: 0;
+    gap: 0;
+    text-align: center;
+    height: 100vh; }
+  .form {
+    width: 100%;
+    height: 100%;
+    padding: 2rem; }
+  .form_maps {
+    width: 100%;
+    height: 100%;
+    padding: 5rem; } }
 
 @media screen and (max-width: 480px) {
+  .index {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../img/dEOgWB.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat; }
   .card {
     display: flex;
     flex-direction: column;
     justify-content: 0;
     gap: 0;
-    text-align: center; } }
+    text-align: center; }
+  nav li {
+    text-align: center;
+    justify-content: center;
+    margin: 2px;
+    padding: 2px;
+    background-color: black; }
+  #submenu {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    list-style: none; }
+  .subtitle {
+    font-size: 1.5rem; }
+  .image_form {
+    width: 480px;
+    height: 15vh; }
+  .image_nosotros1 {
+    margin: 0%; }
+  .box {
+    display: grid; }
+    .box_text1 {
+      font-size: 1.5rem;
+      text-align: center; }
+    .box_title1 {
+      justify-content: center;
+      font-size: 2rem; }
+  .box_recital {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    position: relative; }
+  .gallery_recital {
+    width: 50vh; } }
 
 @keyframes rotate {
   from {

@@ -2,6 +2,13 @@
 @import "../misc/mixins";
 
 @media screen and (max-width: 990px){
+
+    .index{
+        @include sizes(100%, 40vh);
+        background-image: url(../img/dEOgWB.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
     .col-lg-2{
         display: grid;
     }
@@ -17,6 +24,16 @@
     .card__image{
         @include sizes(190px, 90%);
     }
+    .form{
+        @include container(5px, 0);
+       
+        &_maps{
+            @include container(5px, 0);
+            height: 70vh;
+
+        }
+    }
+
     
 
 }
@@ -26,11 +43,80 @@
         @include flex(column, 0, 0);
         text-align: center;
     }
+
+    .form__contact{
+        @include flex(column,0,0);
+        text-align: center;
+        height: 100vh;
+    }
+    .form{
+        @include sizes(100%, 100%);
+        padding: 2rem;
+        
+    }
+    .form_maps{
+        @include sizes(100%, 100%);
+        padding: 5rem;
+    }
+    
+   
 }
 @media screen and (max-width: 480px){
+
+    .index{
+        @include sizes(100%, 30vh);
+        background-image: url(../img/dEOgWB.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
     .card{
         @include flex(column, 0, 0);
         text-align: center;
 
+    }
+
+    nav li{
+        text-align: center;
+        justify-content: center;
+        @include container(2px, 2px);
+        background-color: map-get($map: $colors, $key:'base');
+    }
+    #submenu{
+        @include container(0px, 0px);
+        position: absolute;
+        list-style: none;
+       
+    }
+    
+    .subtitle{
+        font-size: $text-base;
+    }
+
+    .image_form{
+        @include sizes(480px, 15vh);
+    }
+    .image_nosotros1{
+        margin: 0%;
+    }
+    .box{
+        display: grid;
+        &_text1{
+            font-size: $text-base;
+            text-align: center;
+        }
+        &_title1{
+            justify-content: center;
+            font-size: $text-medium;
+        }
+    }
+    .box_recital{
+        @include flex(column, center, 2rem);
+        align-items: center;
+        position: relative;
+    }
+    .gallery_recital{
+        width: 50vh;
+        
+        
     }
 }

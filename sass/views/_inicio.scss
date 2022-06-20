@@ -8,8 +8,14 @@
     font-size: $text-large;
     justify-content: center;
     text-align: center;
-    color: map-get($map: $colors, $key:'primary');
+    color: map-get($map: $colors, $key:'secondary');
 
+}
+.text{
+    @include container(0px, 0px);
+    font-size: $text-medium;
+    text-align: center;
+    color: map-get($map: $colors, $key:'text-color');
 }
 
 .card{ 
@@ -23,11 +29,7 @@
         text-transform: capitalize;
         color: map-get($map: $colors, $key:'text-color');
         @include flex(row, center, 0px);
-        background-color: map-get($map: $colors, $key:'base');
-        &-active {
-            @extend .card__title;
-            color: map-get($map: $colors, $key:'primary');
-        }
+        
     
     }
     .animation:hover{

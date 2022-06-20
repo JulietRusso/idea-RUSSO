@@ -1,0 +1,38 @@
+@import "../misc/variants";
+@import "../misc/mixins";
+
+.image-contact{
+    
+    background-image: url(../img/contact.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+}
+.subtitle_contact{
+    font-size: $text-medium;
+    color: map-get($map: $colors, $key:'text-color');
+    justify-content: center;
+    @include container(4rem, 1rem);
+    text-align: center;
+    border-bottom: solid 3px #9C6644;
+}
+
+.form__contact{
+    @include flex(row, 0, 0);
+    text-align: center;
+    height: 70vh;
+}
+.form{
+    @include sizes(50%, 0);
+    @include container(0, 5rem);
+    &_title{
+        text-transform: uppercase;
+        font-size: $text-medium;
+        color: map-get($map: $colors, $key:'secondary');
+    }
+    &_maps{
+        @include sizes(50%, 0);
+        @include container(0, 5rem);
+    }
+
+}

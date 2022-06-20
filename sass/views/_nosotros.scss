@@ -1,0 +1,56 @@
+@import "../misc/variants";
+@import "../misc/mixins";
+
+.subtitle{
+    text-transform: uppercase;
+    font-size: $text-large;
+    justify-content: center;
+    @include container(4rem, 1rem);
+    text-align: center;
+    color: map-get($map: $colors, $key:'text-color');
+    border-bottom: solid 3px #9C6644;
+}
+
+.box{
+    display: flex;
+    flex: 1 1 50%;
+    @include container(0, 2rem);;
+    align-items: center;
+    &_text{
+        @include flex(column, 0, 0);
+        flex: 1 1 50%;
+    }
+    &_title1{
+        color: map-get($map: $colors, $key:'secondary');
+        font-size: $text-large;
+        display: flex;
+        text-transform: capitalize;
+    }
+    &_text1{  
+        font-size: $text-medium;
+        color: map-get($map: $colors, $key:'text-color');
+    }
+  
+}
+
+.image_nosotros1{
+    @include container(5rem, 0);
+    @include sizes(40rem, 49rem);
+    flex: 1 1 50%;
+}
+
+.image-pages{
+    background-image: url(../img/image_nosotros.jpg);
+    background-size: cover;
+    background-position: center center;
+     
+}
+
+.title-pages{
+    @include container(0, 9rem);
+    text-align: center;
+    color:map-get($map: $colors, $key:'text-color');
+    
+    text-transform: uppercase;
+    font-size: $text-extralarge;
+}

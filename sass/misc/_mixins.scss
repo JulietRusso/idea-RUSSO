@@ -13,3 +13,9 @@
     padding: $padding;
     
 }
+@mixin grid($temp-column, $temp-row, $gap) {
+    grid-template-columns: $temp-column; 
+    grid-template-rows: $temp-row;
+    gap: $gap;
+    
+}
