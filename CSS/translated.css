@@ -283,7 +283,7 @@
 
 .dropdown-menu {
   margin: 0;
-  padding: 15px;
+  padding: 30px;
   background-color: #9C6644;
   list-style: none;
   text-transform: capitalize;
@@ -291,8 +291,11 @@
   .dropdown-menu .dropdown-item {
     margin: 0;
     padding: 15px;
+    background-color: black;
+    color: white;
     display: block; }
     .dropdown-menu .dropdown-item:hover .dropdown-item {
+      color: #9C6644;
       display: block; }
 
 .navbar-toggler {
@@ -425,6 +428,8 @@ body {
     justify-content: 0;
     gap: 0;
     text-align: center; }
+    .card__title {
+      background-color: black; }
   nav li {
     text-align: center;
     justify-content: center;
@@ -442,7 +447,9 @@ body {
     width: 480px;
     height: 15vh; }
   .image_nosotros1 {
-    margin: 0%; }
+    width: 300px;
+    height: 350px;
+    margin: 3px; }
   .box {
     display: grid; }
     .box_text1 {

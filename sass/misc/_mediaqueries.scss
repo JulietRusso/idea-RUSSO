@@ -15,6 +15,7 @@
     #logo{
         display: none;
     }
+    
     nav li{
         @include container(2px, 2px);
         text-align: center;
@@ -72,6 +73,9 @@
     .card{
         @include flex(column, 0, 0);
         text-align: center;
+        &__title{
+            background-color: black;
+        }
 
     }
 
@@ -96,7 +100,8 @@
         @include sizes(480px, 15vh);
     }
     .image_nosotros1{
-        margin: 0%;
+        @include sizes(300px, 350px);
+        margin: 3px;
     }
     .box{
         display: grid;

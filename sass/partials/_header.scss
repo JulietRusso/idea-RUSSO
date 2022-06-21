@@ -35,15 +35,18 @@
 
 }
 .dropdown-menu{
-    @include container(0, 15px);
+    @include container(0, 30px);
     background-color: map-get($map: $colors, $key:'primary') ;
     list-style: none;
     text-transform: capitalize;
     font-size:$text-small;
     .dropdown-item{
         @include container(0, 15px);
+        background-color: black;
+        color: map-get($map: $colors, $key:'text-color');
         display: block;
         &:hover .dropdown-item{
+            color: map-get($map: $colors, $key:'primary');
             display: block;
         
         }
