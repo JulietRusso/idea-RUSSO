@@ -101,6 +101,8 @@
     }
     .image_nosotros1{
         @include sizes(300px, 350px);
+        justify-content: center;
+        text-align: center;
         margin: 3px;
     }
     .box{
@@ -123,5 +125,11 @@
         width: 50vh;
         
         
+    }
+    
+    .form_maps{
+        @include sizes(100%, 100vh);
+        
+        padding: 5rem;
     }
 }
