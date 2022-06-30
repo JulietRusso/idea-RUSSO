@@ -1,7 +1,7 @@
 @import "../misc/variants";
 @import "../misc/mixins";
 
-
+/*INDEX*/
 .encabezado{
     @include container(4rem, 1rem);
     text-transform: uppercase;

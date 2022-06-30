@@ -1,6 +1,7 @@
 /*colors*/
 /*font-sizes*/
 /*font-family*/
+/*INDEX*/
 .encabezado {
   margin: 4rem;
   padding: 1rem;
@@ -78,6 +79,7 @@
 /*colors*/
 /*font-sizes*/
 /*font-family*/
+/*NOSOTROS*/
 .subtitle {
   text-transform: uppercase;
   font-size: 2.5rem;
@@ -132,6 +134,7 @@
 /*colors*/
 /*font-sizes*/
 /*font-family*/
+/*CONTACTO*/
 .image-contact {
   background-image: url(../img/contact.jpg);
   background-size: cover;
@@ -172,6 +175,7 @@
 /*colors*/
 /*font-sizes*/
 /*font-family*/
+/*GALERIA*/
 .title-pages {
   margin: 0;
   padding: 70px; }
@@ -250,6 +254,7 @@
 /*colors*/
 /*font-sizes*/
 /*font-family*/
+/*HEADER*/
 .index {
   width: 100%;
   height: 100vh;
@@ -304,6 +309,7 @@
 /*colors*/
 /*font-sizes*/
 /*font-family*/
+/*FOOTER*/
 footer #footer {
   background-color: #9C6644;
   width: 100vh;
@@ -350,6 +356,7 @@ footer .socials {
 /*colors*/
 /*font-sizes*/
 /*font-family*/
+/*normalize*/
 * {
   margin: 0px;
   padding: 0px; }
@@ -364,6 +371,7 @@ body {
 /*colors*/
 /*font-sizes*/
 /*font-family*/
+/*MEDIA*/
 @media screen and (max-width: 990px) {
   .index {
     width: 100%;

@@ -1,6 +1,7 @@
 @import "../misc/variants";
 @import "../misc/mixins";
 
+/*HEADER*/
 .index{
     @include sizes(100%, 100vh);
     background-image: url(../img/dEOgWB.jpg);

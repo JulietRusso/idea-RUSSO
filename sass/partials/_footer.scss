@@ -1,6 +1,7 @@
 @import "../misc/variants";
 @import "../misc/mixins";
 
+/*FOOTER*/
 footer{
     #footer{
         background-color: map-get($map: $colors, $key:'primary');
