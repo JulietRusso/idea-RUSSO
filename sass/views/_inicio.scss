@@ -75,6 +75,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     @include sizes(100%, 40vh);
+    margin-bottom: 6rem;
 
     .btn{
         margin-top: 110px;
